@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexTask1</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      display: flex;
+      width: 98%;
+      margin: auto;
+      padding: 10px;
+      background-color: rgba(216, 230, 85, 0.795);
+      color: white;
+    }
+
+    .h-1 {
+      height: 300px;
+      gap: 1%;
+    }
+    
+    .row-1 {
+      background-color: rgb(53, 65, 226);
+      border: black 3px solid;
+    }
+    
+    .h-2 {
+      height: 50px;
+    }
+    
+    .row-2 {
+      background-color: rgb(97, 192, 230);
+      border: black 3px solid;
+    }
+    
+    .text {
+      align-content: center;
+      text-align: center;
+    }
+    
+    .text-1 {
+      align-content: start;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box h-1">
+    <div class="row-1 text-1" style="flex-grow: 2;">Confused</div>
+    <div class="row-1 text-1" style="flex-grow: 1;">happy</div>
+    <div class="row-1 text-1" style="flex-grow: 5;">Sad</div>
+  </div>
+  <div class="box h-2">
+    <div class="row-2 text" style="flex-grow: 5;">Warm</div>
+    <div class="row-2 text" style="flex-grow: 2; background-color: rgb(240, 122, 44);">cool</div>
+    <div class="row-2 text" style="flex-grow: 1;">hot</div>
+  </div>
+
+</body>
+
+</html>

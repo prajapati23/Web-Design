@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTask4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            margin: 50px 250px;
+        }
+        .p{
+            color: rgb(68, 68, 68);
+            font-weight: bold;
+            font-size: 30px;
+            font-family: sans-serif;
+            margin: 15px auto;
+        }
+        .span{
+            color: grey;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+        .span-1{
+            color: black;
+            font-weight: bold;
+        }
+        .mainbox{
+            display: flex;
+            justify-content:start;
+        }
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+            border-radius: 5px;
+        }
+        .card-1{
+            height: 160px;
+            width: 650px;
+            margin: 20px 5px;
+            background-color: rgb(120, 158, 240);
+        }
+        .card-2{
+            height: 160px;
+            width: 100px;
+            margin: 20px 5px;
+            background-color: rgb(18, 167, 142);
+        }
+        .card-3{
+            height: 160px;
+            width: 400px;
+            margin: 20px 5px;
+            background-color: rgb(214, 132, 214);
+        }
+        .p-1{
+            margin: 10px;
+            font-family: serif;
+        }
+        .text{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="p">Default Setup</p>
+        <span class="span">Default setup of flex properies</span>
+        <span class="span" style="color: red;">flex: 0 1 auto</span>
+        <span class="span">. That's Shortahnd for</span>
+        <span class="span" style="color: red;">flex-grow, flex-shrink,</span>
+        <span class="span">and</span>
+        <span class="span" style="color: red;">flex-basis</span>
+        <span class="span">properties values.</span><br>
+        <span class="span">The setup basically tells us: "All the flex Children</span>
+        <span class="span span-1">should not grow, should shrink</span>
+        <span class="span">at the same rate, and have their</span>
+        <span class="span span-1">initial size based on their width or height</span>
+        <span class="span">."<span>
+        <div class="mainbox">
+            <div class="card card-1"><b class="text">First card</b>
+                <div class="p-1">On the other hand, we denounce with righteous indination and dislike men who are so beguiled and demoralized by the charms of pleasure of the trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saynig through shrinking from toil and pain.</div>
+            </div>
+            <div class="card card-2"><b class="text">Second card</b>
+                <div class="p-1">I'm the shortest.</div></div>
+            <div class="card card-3"><b class="text">Third card</b>
+                <div class="p-1">But in certain circumstances and owing to the clams of duty or the obligation of business it will frequently occur that pieasures have to be repudiated and annoyances accepted.</div></div>
+        </div>
+    </div>
+</body>
+</html>
