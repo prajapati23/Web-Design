@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTask2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 400px;
+        }
+
+        .box {
+            display: flex;
+            box-sizing: border-box;
+            border: 3px solid;
+            border-color: rgb(235, 78, 78);
+            flex-wrap: wrap;
+            width: 90%;
+            justify-content: space-around;
+        }
+
+        .row-1 {
+            display: flex;
+            height: 80px;
+            width: 500px;
+            margin: 10px;
+            gap: 10px;
+        }
+        
+        #menu1,
+        #menu2 {
+            display: flex;
+            width: 50%;
+            background-color: rgb(140, 74, 216);
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .row-2 {
+            display: flex;
+            height: 150px;
+            width: 500px;
+            margin: 10px;
+            gap: 10px;
+        }
+
+        #menu3 {
+            display: flex;
+            width: 50%;
+            background-color: orange;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .row-2col-2 {
+            display: flex;
+            width: 50%;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding-top: 5px ;
+        }
+        
+        #menu4,
+        #menu5 {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            background-color: blue;
+        }
+        
+        .row-3 {
+            display: flex;
+            width: 99%;
+            margin: 10px;
+            gap: 10px;
+        }
+
+        #row-3col {
+            display: flex;
+            height: 100px;
+            background-color: pink;
+            width: 50%;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="row-1">
+            <div id="menu1">Menu 1</div>
+            <div id="menu2">Menu 2</div>
+        </div>
+        <div class="row-2">
+            <div id="menu3">Menu3</div>
+            <div class="row-2col-2">
+                <div id="menu4">Menu 4</div>
+                <div id="menu5">Menu 5</div>
+            </div>
+        </div>
+        <div class="row-3">
+            <div id="row-3col">Menu 6</div>
+            <div id="row-3col">Menu 7</div>
+            <div id="row-3col">Menu 8</div>
+        </div>
+    </div>
+</body>
+
+</html>
